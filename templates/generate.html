@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <div class="card">
+        <div class="card-header">
+          Quote
+        </div>
+        <div class="card-body">
+          <figure>
+            <blockquote class="blockquote">
+              <p>{{values[idx]}}</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+            <cite title="Source Title">{{keys[idx]}}</cite>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+{% endblock %}
